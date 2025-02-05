@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Cakes - Cinien Pastries</title>
+  <link rel="stylesheet" href="pastries.css">
+  <script defer src="pastries.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar transparent">
+    <div class="logo">Cinien Pastries</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="birthday.html">Birthday Cakes</a></li>
+      <li><a href="wedding.html">Wedding Cakes</a></li>
+      <li><a href="valentine.html">Valentine Specials</a></li>
+      <li><a href="custom.html">Custom Cakes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Video Loop and Image Fading -->
+  <header class="hero-section">
+    <div class="hero-content">
+      <video >
+        <source src="images/WhatsApp Video 2025-02-01 at 11.03.39.mp4" type="video/mp4">
+      </video>
+      <div class="fade-carousel">
+        <img src="images/home.jpg" alt="Birthday Cake 1">
+        <img src="images/bday2.jpg" alt="Birthday Cake 2">
+        <img src="images/bday1.jpg" alt="Birthday Cake 3">
+      </div>
+    </div>
+  </header>
+
+  <!-- Welcome Section -->
+  <section class="welcome-section">
+    <div class="owner-info">
+      <img src="images/home.jpg" alt="Owner">
+      <div class="welcome-message">
+        <h2>Welcome to Cinien Pastries</h2>
+        <p>Where every cake is made with love! Explore our special birthday cakes and make your celebration unforgettable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Birthday Cake Packages -->
+  <section class="cake-packages">
+    <h2>Our Special Birthday Packages</h2>
+    <div class="grid-container">
+      <div class="grid-item" onclick="showSlideshow('birthday1.jpg')">
+        <img src="images/birtday/1d88ef0c-1229-4db1-9e2e-540732f0468d.jpg" alt="₦10K Package">
+        <p>₦10K Package</p>
+        <a href="https://wa.me/123456789?text=I%20want%20to%20order%20the%20₦10K%20Birthday%20Cake" class="order-btn">Order Now</a>
+      </div>
+      <div class="grid-item" onclick="showSlideshow('birthday2.jpg')">
+        <img src="birthday2.jpg" alt="₦15K Package">
+        <p>₦15K Package</p>
+        <a href="https://wa.me/123456789?text=I%20want%20to%20order%20the%20₦15K%20Birthday%20Cake" class="order-btn">Order Now</a>
+      </div>
+      <div class="grid-item" onclick="showSlideshow('birthday3.jpg')">
+        <img src="birthday3.jpg" alt="₦20K Package">
+        <p>₦20K Package</p>
+        <a href="https://wa.me/123456789?text=I%20want%20to%20order%20the%20₦20K%20Birthday%20Cake" class="order-btn">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+ 
+
+</body>
+</html>

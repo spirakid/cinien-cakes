@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name= " viewport " content="width=device-width,initial-scale=1.0"> 
+        <meta name=" description " content="Delicious homemade cakes for every occasions ">
+        <link rel="stylesheet" href="style.css">
+        <title>ciniencakes </title>
+        
+    </head>
+    <body>
+        <header>
+            <h1>ciniencakes and pastries food</h1>
+            <p>Your one-stop shop for delicious, custom cakes and pastries.</p>
+            <a href="#gallery" class="button">View cakes</a>
+            <a href="#contact" class="button">Order now</a>
+        </header>
+
+        <main>
+            <section id="gallery">
+                <h1>Our Cakes</h1>
+                <div class="gallery">
+                    <img src="https://img.taste.com.au/JMqL6Vo4/w643-h428-cfill-q90/taste/2022/03/german-chocolate-cake-177122-1.jpg" alt="chocolate cake">
+                    <img src="https://img.taste.com.au/JMqL6Vo4/w643-h428-cfill-q90/taste/2022/03/german-chocolate-cake-177122-1.jpg" alt="chocolate cake">
+                    <img src="https://img.taste.com.au/JMqL6Vo4/w643-h428-cfill-q90/taste/2022/03/german-chocolate-cake-177122-1.jpg" alt="chocolate cake">
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact us</h2>
+                <p>Place your order or get in touch with us!</p>
+                <a href="wa.me/1234567890" target="_blank" class="button" >whatsapp</a>
+                <a href="mailto:ciniencakes@example.com" class="button">Email us</a>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Cinien Cakes and Pastries. All Rights Reserved</p>
+        </footer>
+        
+    </body>
+    <script src="script.js"> </script>
+</html>
+/***.page-header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .page-header h1 {
+    font-size: 2.5rem;
+    color: #ff1493;
+  }
+  
+  .page-header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Back to Home Link */
+  .back-to-home {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .back-to-home a {
+    text-decoration: none;
+    color: #ff1493;
+    font-size: 1.2rem;
+  }
+  
+  .back-to-home a:hover {
+    text-decoration: underline;
+  }
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Carousel Images */
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 40%;
+    flex-shrink: 0;
+  }
+  
+  /* Carousel Buttons */
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+    
+
+ /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+        background: linear-gradient(to bottom right, #ffffff, #e0b3ff); /* White to soft lavender gradient */
+        height: 100vh; /* Ensure it covers the full viewport */
+      }
+
+/* Navigation Styles */
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(to bottom right, #ffffff, #e0b3ff); /* Gradient from left to right */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps the navbar on top */
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+
+}
+
+.dropbtn {
+   background-color: #e0b3ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.dropbtn:hover {
+    background-color: #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #742b74fb;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Main Content Section */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 20px 20px; /* Add padding to avoid navbar overlap */
+}
+
+.text-column {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.cake-gallery-column {
+    flex: 1;
+}
+
+.cake-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cake-item {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cake-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Fun Font Styles */
+.fun-font {
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 36px;
+    color: purple; /* A fun red color for the title */
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+/* Cake Gallery Styles */
+.cake-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 80px; /* Adds space below navbar */
+}
+
+.cake-item {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cake-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+    font-size: 1rem;
+  }
+  
+  .footer p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .footer .social-links a {
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .footer .social-links a:hover {
+    color: #ff6f61;
+    transform: scale(1.1);
+  }
+  
+  .footer .social-links a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+  }
+  
+.logos {
+    display: inline-block;
+    border-radius: 100%;
+    height: 85px;
+    width: 85px;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine Specials - Cinien Pastries</title>
+  <link rel="stylesheet" href="valentine.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/home.jpg" alt="Cinien Pastries Logo">
+      <span>Cinien Pastries</span>
+    </div>
+    <h1 class="page-title">Valentine Specials</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="birthday.html">Birthday Cakes</a></li>
+      <li><a href="wedding.html">Wedding Cakes</a></li>
+      <li><a href="custom.html">Custom Cakes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Carousel -->
+  <header class="hero-section">
+    <div class="carousel-container">
+      <div class="carousel">
+        <img src="images/valentine/04b24c79-9b85-48e7-bd22-49db96042bca.jpg" alt="Valentine Cake 1">
+        <img src="images/valentine/0b762e9f-1aa7-499d-86a7-96405724666f.jpg" alt="Heart Cake">
+        <img src="images/valentine/227d4160-d842-4198-9b41-861a5759c5a1.jpg" alt="Chocolate Love">
+      </div>
+      <button class="carousel-btn prev-btn">&#10094;</button>
+      <button class="carousel-btn next-btn">&#10095;</button>
+    </div>
+  </header>
+
+  <!-- Valentine's Gallery Section -->
+  <section class="valentine-gallery">
+    <h2>Sweet Love Specials 💕</h2>
+    <p>Celebrate love with our delicious Valentine’s cakes & pastries!</p>
+
+    <div class="gallery">
+      <img src="images/valentine/04b24c79-9b85-48e7-bd22-49db96042bca.jpg" alt="Valentine Cake 1">
+      <img src="images/valentine/4309592c-a12c-479d-bbc8-aa3e3f36801e.jpg" alt="Valentine Cake 1">
+      <img src="images/valentine/4cb1e0f9-bb09-47dc-89fb-1205953238e5.jpg" alt="Valentine Cake 1">
+      <img src="images/valentine/62d33f9c-c9e5-4553-9311-30d1b5bf5480.jpg" alt="Valentine Cake 1">
+      <img src="images/valentine/b6288ed7-3aa5-4c09-a964-836f3f3f345a.jpg" alt="Valentine Cake 1">
+      <img src="images/valentine/b6288ed7-3aa5-4c09-a964-836f3f3f345a.jpg" alt="Valentine Cake 1">
+      <img src="images/valentine/b6288ed7-3aa5-4c09-a964-836f3f3f345a.jpg" alt="Valentine Cake 1">
+      <img src="images/valentine/b6288ed7-3aa5-4c09-a964-836f3f3f345a.jpg" alt="Valentine Cake 1">
+    </div>
+  </section>
+
+  <!-- Footer with Social Media Links & Gradient Background -->
+  <footer class="footer">
+    <p>Follow us on:</p>
+    <div class="social-links">
+      <a href="wa.me/123456789" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
+      <a href="instagram.com/cinienpastries" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+      <a href="facebook.com/cinienpastries" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+/* NAVBAR STYLING */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff4d6d;
+    padding: 15px 20px;
+    color: white;
+  }
+  
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .logo img {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 100%;
+  }
+  
+  .navbar .page-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* VALENTINE GALLERY STYLING */
+  .valentine-gallery {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .valentine-gallery h2 {
+    font-size: 28px;
+    color: #ff4d6d;
+  }
+  
+  .valentine-gallery p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* IMAGE GALLERY GRID */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* FOOTER STYLING */
+  .footer {
+    background: #ff4d6d;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    margin-top: 30px;
+  }
+  
+  .footer .social-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .social-links img {
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .social-links img:hover {
+    transform: scale(1.2);
+  }
+
+
+
+  
+  /* FOOTER STYLING */
+  .footer {
+    background: #ff4d6d;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    margin-top: 30px;
+  }
+  
+  .footer .social-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer .social-links a:hover {
+    text-decoration: underline;
+  }
+
+  for style css
+  
+ /* General Styles */
+ body {
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+   background: linear-gradient(to bottom right, #ffffff, #e0b3ff); /* White to soft lavender gradient */
+   color: #333;
+ }
+ 
+ /* Navbar with Blur Effect */
+ .navbar {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background: rgba(255, 255, 255, 0.6);
+   backdrop-filter: blur(10px);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 30px;
+   z-index: 1000;
+ }
+ 
+ .navbar .logo {
+   font-size: 24px;
+   font-weight: bold;
+   color: #d32f2f;
+ }
+ 
+ .nav-links {
+   list-style: none;
+   display: flex;
+   gap: 20px;
+ }
+ 
+ .nav-links li a {
+   text-decoration: none;
+   color: #333;
+   font-weight: bold;
+   transition: color 0.3s ease;
+ }
+ 
+ .nav-links li a:hover {
+   color: #d32f2f;
+ }
+ 
+ /* Hero Section with Carousel */
+ .hero-section {
+   margin-top: 80px;
+   overflow: hidden;
+   position: relative;
+ }
+ 
+ /* Updated Carousel for Fade Effect */
+ .carousel-container {
+   position: relative;
+   max-width: 100%;
+   height: 500px;
+   overflow: hidden;
+ }
+ 
+ .carousel {
+   position: relative;
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .carousel img {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   opacity: 0;
+   transition: opacity 1s ease-in-out;
+ }
+ 
+ .carousel img.active {
+   opacity: 1;
+ }
+ 
+ /* Carousel Buttons */
+ .carousel-btn {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   font-size: 24px;
+   padding: 10px;
+   z-index: 100;
+ }
+ 
+ .prev-btn { left: 10px; }
+ .next-btn { right: 10px; }
+ 
+ 
+ /* Category Buttons */
+ .categories {
+   text-align: center;
+   padding: 50px 20px;
+ }
+ 
+ .category-buttons {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   flex-wrap: wrap;
+ }
+ 
+ .category-btn {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-decoration: none;
+   color: #333;
+   transition: transform 0.3s ease;
+ }
+ 
+ .category-btn:hover {
+   transform: scale(1.05);
+ }
+ 
+ .category-btn img {
+   width: 300px;
+   height: 200px;
+   border-radius: 10px;
+   object-fit: cover;
+ }
+ 
+ /* Valentine's Pop-up */
+ .popup {
+   display: none;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: white;
+   padding: 20px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   border-radius: 10px;
+ }
+ 
+ .popup-content button {
+   background: #d32f2f;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ .popup-content button:hover {
+   background: #b71c1c;
+ }
+ 
+ .close-btn {
+   float: right;
+   font-size: 20px;
+   cursor: pointer;
+ }
+ 
+ /* Footer */
+ .footer {
+   text-align: center;
+   padding: 20px;
+   background: linear-gradient(to right, #d32f2f, #ff7043);
+   color: white;
+ }
+ 
+ .social-links img {
+   width: 30px;
+   margin: 10px;
+   cursor: pointer;
+   transition: transform 0.3s;
+ }
+ 
+ .social-links img:hover {
+   transform: scale(1.2);
+ }
