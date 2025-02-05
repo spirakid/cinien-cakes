@@ -24,3 +24,17 @@ document.addEventListener('DOMContentLoaded', function() {
   images[0].classList.add('active');
 });
 
+document.querySelectorAll(".view-more-btn").forEach(button => {
+  button.addEventListener("click", function () {
+      const section = this.previousElementSibling;
+      const hiddenImages = section.querySelectorAll(".hidden");
+
+      hiddenImages.forEach(img => img.classList.toggle("hidden"));
+
+      if (this.textContent === "View More") {
+          this.textContent = "View Less";
+      } else {
+          this.textContent = "View More";
+      }
+  });
+});
